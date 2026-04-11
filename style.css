@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'poppins', sans-serif;
+    /* font-family:'poppins', sans-serif; */
     background-color:oldlace
 }
 header{
@@ -18,6 +18,14 @@ header img {
     width: 200px;
     height: auto;
 }
+.navbar{
+    position:sticky;
+    top:0;
+    width:100%;
+    height: 3rem;
+    z-index:1000;
+}
+
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +138,7 @@ nav a {
     font-size: 3rem;
     font-weight: 600;
     padding:0.5rem;
-    font-family:Georgia, Times, serif;
+    font-family:serif;
     margin:0;
 }
 .hero-content h3{
@@ -139,7 +147,7 @@ nav a {
     font-weight: 500;
     padding:0.5rem 1rem;
     margin:0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:serif;
 }
 .detailsBox{
     position: absolute;
@@ -166,7 +174,7 @@ nav a {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: 'Georgia', serif;
+    font-family: serif;
 }
 .products-container{
     position:relative;
@@ -190,20 +198,23 @@ nav a {
     /* height:300px; */
 }
 .center{
-    z-index: 3;
+    z-index: 100;
     opacity: 1;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(1.1);
+    transition:all 0.5s ease;
 }
 
 .left{
-    z-index: 2;
+    z-index: 1;
     opacity: 1;
-    transform: translate(-150%,-50%);
+    transform: translate(-150%,-50%) scale(1);
+    transition: all 0.5s ease;
 }
 .right{
     z-index: 2;
     opacity: 1;
-    transform: translate(50%,-50%);
+    transform: translate(50%,-50%) scale(1);
+    transition: all 0.5s ease;
 }
 .items img{
     height: 25rem;
@@ -211,10 +222,9 @@ nav a {
     border-radius: 0.5rem;
     display: flex;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin:0.5rem;
 }
-.center img{
-    height: 30rem;
-}
+
 
 .btn{
     color:black;
@@ -279,6 +289,11 @@ nav a {
 .product-card img{
     width:15rem;
 }
+.product-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
 #larger-pic{
     height: 28.5rem;
 }
@@ -287,9 +302,9 @@ nav a {
 }
 .product-card p{
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 400;
     text-align: center;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 .category-container {
     margin-top:2rem;

@@ -14,12 +14,12 @@
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
+            <li><a href="pages/product.html">Products</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="home">
         <section class="hero-section">
             <div class="hero-content">
                 <div class="detailsBox">
@@ -33,25 +33,25 @@
                 </div>
             </div>            
         </section>
-        <section class="products-section" id="products ">
+        <section class="products-section" id="products">
                 <div class="products-container-wrapper">
                     <h2 class="section-heading">Collections You'll Love</h2>
                     <p>Let's take a glimpse at our featured collections before diving in!</p>
                     <div class="products-container">
-                        <div  class="items right" id="item1">
+                        <div  class="items left" id="item1">
                             <img src="assets/product2.jpg" alt="">
                         </div>
-                        <div  class="items left" id="item2">
+                        <div  class="items center" id="item2">
                             <img src="assets/product1.jpg" alt="">
                         </div>
-                        <div class="items center" id="item3">
+                        <div class="items right" id="item3">
                             <img src="assets/product3.jpg" alt="">
                         </div>
                     </div>
                     <div class="button-wrapper">
-                        <button class="btn" id="btn-left" onclick="changePosition('right')"> <i class="fa-solid fa-angle-left" ></i></button>
+                        <button class="btn" id="btn-left" onclick="changePosition('left')"> <i class="fa-solid fa-angle-left" ></i></button>
                         <button class="btn">Shop Now</button>
-                        <button class="btn" id="btn-right" onclick="changePosition('left')"> <i class="fa-solid fa-angle-right" ></i> </button>
+                        <button class="btn" id="btn-right" onclick="changePosition('right')"> <i class="fa-solid fa-angle-right" ></i> </button>
                     </div>
                 </div>
                 <div class="products-container-wrapper">
