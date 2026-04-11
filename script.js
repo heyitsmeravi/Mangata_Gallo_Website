@@ -14,3 +14,17 @@ function changePosition(direction){
     item2.className="items " + positions[(currentIndex + 1) % 3];
     item3.className="items " + positions[(currentIndex + 2) % 3];
 }
+
+// Navbar scroll effect
+
+let navbar=document.querySelector(".navbar");
+let lastScroll=0;
+window.addEventListener("scroll", function(){
+    let diff=window.scrollY - lastScroll;
+    if(diff > 10){
+        navbar.classList.add("scrolled");
+    } else if(diff < -10){
+        navbar.classList.remove("scrolled");
+    }
+    lastScroll=window.scrollY;
+});

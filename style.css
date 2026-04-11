@@ -39,6 +39,7 @@ nav{
     font-size: large;
     font-weight: 600;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease;
 }
 nav ul{
     list-style: none;
@@ -66,6 +67,9 @@ nav ul li:hover{
 }
 nav a {
     text-decoration: none;
+}
+.scrolled{
+    transform: translateY(-100%);
 }
 .hero-section{
     background-image: url("assets/banner12.png");
@@ -359,3 +363,16 @@ footer img{
         background-image: url("assets/banner12.png");
     }
 }
+
+/* Product page Styling */
+.left-filter-box{
+    width:20%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right:black solid 5px;
+    height:100vh;
+}
+
+
