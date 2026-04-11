@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata and Gallo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <header>
+        <img src="assets/Asset 1@3x.png" alt="Logo">
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="detailsBox">
+                    <p class="details">Discover the allure of our exquisite jewellery collection, where timeless elegance meets contemporary design. Each piece is meticulously crafted to captivate your senses and elevate your style. From dazzling diamonds to vibrant gemstones, our collection offers a stunning array of options to express your unique personality and celebrate life's precious moments. Indulge in the artistry of our jewellery and let it become a cherished part of your story.</p>
+                </div>
+                <h1>Welcome to Mangata & Gallo!</h1>
+                <h3>Luxury collections of Jewellery</h3>
+                <div class="button-wrapper">
+                    <button class="shop-now-btn">Shop Now</button>
+                    <button class="learn-btn">Learn More</button>
+                </div>
+            </div>            
+        </section>
+        <section class="products-section" id="products ">
+                <div class="products-container-wrapper">
+                    <h2 class="section-heading">Collections You'll Love</h2>
+                    <p>Let's take a glimpse at our featured collections before diving in!</p>
+                    <div class="products-container">
+                        <div  class="items right" id="item1">
+                            <img src="assets/product2.jpg" alt="">
+                        </div>
+                        <div  class="items left" id="item2">
+                            <img src="assets/product1.jpg" alt="">
+                        </div>
+                        <div class="items center" id="item3">
+                            <img src="assets/product3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn" id="btn-left" onclick="changePosition('right')"> <i class="fa-solid fa-angle-left" ></i></button>
+                        <button class="btn">Shop Now</button>
+                        <button class="btn" id="btn-right" onclick="changePosition('left')"> <i class="fa-solid fa-angle-right" ></i> </button>
+                    </div>
+                </div>
+                <div class="products-container-wrapper">
+                    <h2 class="section-heading">Shop by Category</h2>
+                    <p>So that you don't run out of options to choose from!</p>
+                    <div class="category-container">
+                        <div class="product-card-container1">
+                            <div class="product-card">
+                                <img src="assets/product7.jpg" alt="">
+                                <p>Rings</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/product8.jpg" alt="">
+                                <p>Nose Rings</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card-container2">
+                            <div class="product-card">
+                                <img src="assets/product1.jpg" alt="" id="larger-pic">
+                                <p>Necklaces</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/product6.jpg" alt="" id="smaller-pic">
+                                <p>Bracelets</p>
+                            </div>
+                        </div>
+                        <div class="product-card-container3">
+                            <div class="product-card">
+                                <img src="assets/product3.jpg" alt="">
+                                <p>Earrings</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/product9.jpg" alt="">
+                                <p>Heavy Necklaces</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="assets/Asset 4@3x.png" alt="">
+        </div>
+        <div class="footer-content2">
+            <div class="copyright">
+                <hr>
+                <p id="copyright-tag"> Copyright Mangata Gallo </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
