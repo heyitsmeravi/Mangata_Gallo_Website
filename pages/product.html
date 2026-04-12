@@ -21,8 +21,10 @@
     </nav>
     <main>
         <section id="products">
-            <div class="left-filter-box">
-                <h2>Filter by</h2>
+            <div class="product-page-wrapper">
+            <div class="filter-box">
+                <h2>Filters</h2>
+                <hr>
                 <div class="filter-category">
                     <h3>Category</h3>
                     <ul>
@@ -32,25 +34,158 @@
                         <li><input type="checkbox" id="earrings" name="category"><label for="earrings">Earrings</label></li>
                     </ul>
                 </div>
-                <div class="filter-price">
+                <div class="filter-category">
                     <h3>Price Range</h3>
                     <ul>
-                        <li><input type="checkbox" id="under100" name="price"><label for="under100">Under $100</label></li>
-                        <li><input type="checkbox" id="100-500" name="price"><label for="100-500">$100 - $500</label></li>
-                        <li><input type="checkbox" id="500-1000" name="price"><label for="500-1000">$500 - $1000</label></li>
-                        <li><input type="checkbox" id="over1000" name="price"><label for="over1000">Over $1000</label></li>
+                        <li><input type="radio" id="under100" name="price"><label for="under100">Below ₹10000</label></li>
+                        <li><input type="radio" id="100-500" name="price"><label for="100-500">₹10000 - ₹15000</label></li>
+                        <li><input type="radio" id="500-1000" name="price"><label for="500-1000">₹15000 - ₹20000</label></li>
+                        <li><input type="radio" id="over1000" name="price"><label for="over1000">Over ₹20000</label></li>
+                    </ul>
+                </div>
+                <div class="filter-category">
+                    <h3>Material</h3>
+                    <ul>
+                        <li><input type="checkbox" id="gold" name="material"><label for="gold">Gold</label></li>
+                        <li><input type="checkbox" id="silver" name="material"><label for="silver">Silver</label></li>
+                        <li><input type="checkbox" id="platinum" name="material"><label for="platinum">Platinum</label></li>
+                        <li><input type="checkbox" id="diamond" name="material"><label for="diamond">Diamond</label></li>
+                    </ul>
+                </div>
+                <div class="filter-category">
+                    <h3>Shop for</h3>
+                    <ul>
+                        <li><input type="checkbox" id="shopfor1" name="shopfor"><label for="shopfor1">Man</label></li>
+                        <li><input type="checkbox" id="shopfor2" name="shopfor"><label for="shopfor2">Woman</label></li>
+                        <li><input type="checkbox" id="shopfor3" name="shopfor"><label for="shopfor3">Child</label></li>
+                        <li><input type="checkbox" id="shopfor4" name="shopfor"><label for="shopfor4">Unisex</label></li>
                     </ul>
                 </div>
             </div>
-            <div class="right-products-container-wrapper">
-                <div>
-                    
+            <div class="products-page-container-wrapper">
+                <div class="product-section-card">
+                    <img src="../assets/ring1.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹12,000</span>
+                        <span class="old-price">₹18,000</span>
+                        <p>Elegant Gold Ring</p>
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="product-section-card">
+                    <img src="../assets/ring2.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹15,000</span>
+                        <span class="old-price">₹20,000</span>
+                        <p>Stylish Silver Necklace</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring3.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹20,000</span>
+                        <span class="old-price">₹25,000</span>
+                        <p>Beautiful Platinum Bracelet</p>
+                    </div>  
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring4.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring5.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring6.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring7.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/ring8.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/necklace1.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/necklace2.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/necklace3.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+                <div class="product-section-card">
+                    <img src="../assets/necklace4.jpg" alt="">
+                    <i class="fa-regular fa-heart wishlist-icon"></i>
+                    <div class="product-info">
+                        <span class="new-price">₹25,000</span>
+                        <span class="old-price">₹30,000</span>
+                        <p>Sparkling Diamond Earrings</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="../assets/Asset 4@3x.png" alt="">
+        </div>
+        <div class="footer-content2">
+            <div class="copyright">
+                <hr>
+                <p id="copyright-tag"> Copyright Mangata Gallo </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
