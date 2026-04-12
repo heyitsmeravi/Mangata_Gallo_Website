@@ -466,3 +466,80 @@ footer img{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
+
+/*filter box styling*/
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.filter-option input {
+    display: none;
+}
+.box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.2s;
+}
+.filter-option input:checked + .box {
+    background-color: darkgoldenrod;
+}
+.box::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.filter-option input:checked + .box::after {
+    display: block;
+}
+
+.box::after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.circle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 50%;
+    position: relative;
+}
+.filter-option input:checked + .circle {
+    background-color: white;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.filter-option input:checked + .circle::after {
+    display: block;
+}
+
+.circle::after {
+    top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    background: darkgoldenrod;
+    border-radius: 50%;
+}
+.filter-option:hover .box,
+.filter-option:hover .circle {
+    box-shadow: 0 0 5px darkgoldenrod;
+    transform: scale(1.1);
+}
