@@ -209,9 +209,9 @@ nav a {
 }
 
 .left{
-    z-index: 1;
+    z-index: 10;
     opacity: 1;
-    transform: translate(-150%,-50%) scale(1);
+    transform: translate(-150% ,-50%) scale(1);
     transition: all 0.5s ease;
 }
 .right{
@@ -365,14 +365,104 @@ footer img{
 }
 
 /* Product page Styling */
-.left-filter-box{
+.filter-box{
     width:20%;
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-right:black solid 5px;
+    /* text-align: center; */
+    border-right:rgba(255, 198, 106,0.2) solid 8px;
     height:100vh;
+    padding:2rem;
+    margin:0;
+}
+.filter-box ul{
+    list-style: none;
+}
+.filter-box h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+    font-family: serif;
+}
+.filter-category{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 0;
+    font-family: serif;
+    border: 2px solid black;
+    border-left: 0;
+    border-right:0;
+    border-top:0;
+    padding:1.5rem 0 ;
 }
 
+.filter-category h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
 
+.products-page-container-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding:2rem;
+    gap:2rem;
+}
+.product-page-wrapper{
+    display: flex;
+    width:100%;
+
+}
+.product-section-card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    justify-content: start;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
+    gap:0.4rem;
+    position: relative;
+}
+.product-section-card img{
+    width:100%;
+    border-radius: 5px;
+}
+.wishlist-icon{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: gold;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.product-info{
+    justify-content: start;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: start;
+}
+.product-info .new-price{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: darkgoldenrod;
+    margin-right:0.4rem
+}
+.product-info .old-price{
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: line-through;
+    color: gray;
+}
+.product-section-card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
