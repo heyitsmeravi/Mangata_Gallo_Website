@@ -79,7 +79,7 @@ function filterProducts() {
         const material = product.dataset.material;
         const shopfor = product.dataset.shopfor;
         const price = parseInt(product.dataset.price);
-
+ 
         let categoryMatch =
             selectedCategories.length === 0 ||
             selectedCategories.includes(category);
