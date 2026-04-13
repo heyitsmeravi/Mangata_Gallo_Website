@@ -28,42 +28,42 @@
                 <div class="filter-category">
                     <h3>Category</h3>
                     <ul>
-                        <li><label for="rings" class="filter-option"><input type="checkbox" name="rings" id="rings"><span class="box"></span>Rings</label></li>
-                        <li><label for="necklaces" class="filter-option"><input type="checkbox" name="necklaces" id="necklaces"><span class="box"></span>Necklaces</label></li>
-                        <li><label for="bracelets" class="filter-option"><input type="checkbox" name="bracelets" id="bracelets"><span class="box"></span>Bracelets</label></li>
-                        <li><label for="earrings" class="filter-option"><input type="checkbox" name="earrings" id="earrings"><span class="box"></span>Earrings</label></li>
+                        <li><label for="rings" class="filter-option"><input type="checkbox" name="rings" id="rings" value="rings"><span class="box"></span>Rings</label></li>
+                        <li><label for="necklaces" class="filter-option"><input type="checkbox" name="necklaces" id="necklaces" value="necklaces"><span class="box"></span>Necklaces</label></li>
+                        <li><label for="bracelets" class="filter-option"><input type="checkbox" name="bracelets" id="bracelets" value="bracelets"><span class="box"></span>Bracelets</label></li>
+                        <li><label for="earrings" class="filter-option"><input type="checkbox" name="earrings" id="earrings" value="earrings"><span class="box"></span>Earrings</label></li>
                     </ul>
                 </div>
                 <div class="filter-category">
                     <h3>Price Range</h3>
                     <ul>
-                        <li><label class="filter-option"><input type="radio" name="price"><span class="circle"></span>₹10000 - ₹15000</label></li>
-                        <li><label class="filter-option"><input type="radio" id="100-500" name="price"><span class="circle"></span>₹10000 - ₹15000</label></li>
-                        <li><label class="filter-option"><input type="radio" id="500-1000" name="price"><span class="circle"></span>₹15000 - ₹20000</label></li>
-                        <li><label class="filter-option"><input type="radio" id="over1000" name="price"><span class="circle"></span>Over ₹20000</label></li>
+                        <li><label class="filter-option"><input type="radio" name="price" value="10000-15000"><span class="circle" ></span>₹10000 - ₹15000</label></li>
+                        <li><label class="filter-option"><input type="radio" id="100-500" name="price" value="15000-20000"><span class="circle" ></span>₹15000 - ₹20000</label></li>
+                        <li><label class="filter-option"><input type="radio" id="500-1000" name="price" value="20000-30000"><span class="circle" ></span>₹20000 - ₹30000</label></li>
+                        <li><label class="filter-option"><input type="radio" id="over1000" name="price" value="over30000"><span class="circle" ></span>Over ₹30000</label></li>
                     </ul>
                 </div>
                 <div class="filter-category">
                     <h3>Material</h3>
                     <ul>
-                        <li><label for="gold" class="filter-option"><input type="checkbox" id="gold" name="material"><span class="box"></span>Gold</label></li>
-                        <li><label for="silver" class="filter-option"><input type="checkbox" id="silver" name="material"><span class="box"></span>Silver</label></li>
-                        <li><label for="platinum" class="filter-option"><input type="checkbox" id="platinum" name="material"><span class="box"></span>Platinum</label></li>
-                        <li><label for="diamond" class="filter-option"><input type="checkbox" id="diamond" name="material"><span class="box"></span>Diamond</label></li>
+                        <li><label for="gold" class="filter-option"><input type="checkbox" id="gold" name="material" value="gold"><span class="box"></span>Gold</label></li>
+                        <li><label for="silver" class="filter-option"><input type="checkbox" id="silver" name="material" value="silver"><span class="box"></span>Silver</label></li>
+                        <li><label for="platinum" class="filter-option"><input type="checkbox" id="platinum" name="material" value="platinum"><span class="box"></span>Platinum</label></li>
+                        <li><label for="diamond" class="filter-option"><input type="checkbox" id="diamond" name="material" value="diamond"><span class="box"></span>Diamond</label></li>
                     </ul>
                 </div>
                 <div class="filter-category">
                     <h3>Shop for</h3>
                     <ul>
-                        <li><label for="shopfor1" class="filter-option"><input type="checkbox" id="shopfor1" name="shopfor"><span class="box"></span>Man</label></li>
-                        <li><label for="shopfor2" class="filter-option"><input type="checkbox" id="shopfor2" name="shopfor"><span class="box"></span>Woman</label></li>
-                        <li><label for="shopfor3" class="filter-option"><input type="checkbox" id="shopfor3" name="shopfor"><span class="box"></span>Child</label></li>
-                        <li><label for="shopfor4" class="filter-option"><input type="checkbox" id="shopfor4" name="shopfor"><span class="box"></span>Unisex</label></li>
+                        <li><label for="shopfor1" class="filter-option"><input type="checkbox" id="shopfor1" name="shopfor" value="Man"><span class="box"></span>Man</label></li>
+                        <li><label for="shopfor2" class="filter-option"><input type="checkbox" id="shopfor2" name="shopfor" value="Woman"><span class="box"></span>Woman</label></li>
+                        <li><label for="shopfor3" class="filter-option"><input type="checkbox" id="shopfor3" name="shopfor" value="Child"><span class="box"></span>Child</label></li>
+                        <li><label for="shopfor4" class="filter-option"><input type="checkbox" id="shopfor4" name="shopfor" value="Unisex"><span class="box"></span>Unisex</label></li>
                     </ul>
                 </div>
             </div>
             <div class="products-page-container-wrapper">
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="10000-15000" data-material="gold" data-shopfor="woman">
                     <img src="../assets/ring1.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
@@ -72,70 +72,70 @@
                         <p>Elegant Gold Ring</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="15000-20000" data-material="silver" data-shopfor="man">
                     <img src="../assets/ring2.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
                         <span class="new-price">₹15,000</span>
                         <span class="old-price">₹20,000</span>
-                        <p>Stylish Silver Necklace</p>
+                        <p>Premium Ring with Saphire</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="20000-25000" data-material="platinum" data-shopfor="woman">
                     <img src="../assets/ring3.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
                         <span class="new-price">₹20,000</span>
                         <span class="old-price">₹25,000</span>
-                        <p>Beautiful Platinum Bracelet</p>
+                        <p>Beautiful Rose Gold Ring</p>
                     </div>  
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="25000-30000" data-material="diamond" data-shopfor="woman">
                     <img src="../assets/ring4.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
                         <span class="new-price">₹25,000</span>
                         <span class="old-price">₹30,000</span>
-                        <p>Sparkling Diamond Earrings</p>
+                        <p>Sparkling Diamond Ring</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="30000-35000" data-material="platinum" data-shopfor="man">
                     <img src="../assets/ring5.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹30,000</span>
+                        <span class="old-price">₹35,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="35000-40000" data-material="gold" data-shopfor="woman">
                     <img src="../assets/ring6.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹35,000</span>
+                        <span class="old-price">₹40,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="40000-45000" data-material="diamond" data-shopfor="man">
                     <img src="../assets/ring7.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹40,000</span>
+                        <span class="old-price">₹45,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card ring-card" data-category="rings" data-price="45000-50000" data-material="platinum" data-shopfor="woman">
                     <img src="../assets/ring8.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹45,000</span>
+                        <span class="old-price">₹50,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card necklace-card" data-category="necklaces" data-price="25000-30000" data-material="diamond" data-shopfor="woman">
                     <img src="../assets/necklace1.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
@@ -144,25 +144,28 @@
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card"
+                data-category="necklaces"
+                data-price="34000"
+                data-material="gold">
                     <img src="../assets/necklace2.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹34,000</span>
+                        <span class="old-price">₹40,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card" data-category="necklaces" data-price="45000" data-material="diamond">
                     <img src="../assets/necklace3.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
-                        <span class="new-price">₹25,000</span>
-                        <span class="old-price">₹30,000</span>
+                        <span class="new-price">₹45,000</span>
+                        <span class="old-price">₹50,000</span>
                         <p>Sparkling Diamond Earrings</p>
                     </div>
                 </div>
-                <div class="product-section-card">
+                <div class="product-section-card" data-category="necklaces" data-price="25000" data-material="diamond">
                     <img src="../assets/necklace4.jpg" alt="">
                     <i class="fa-regular fa-heart wishlist-icon"></i>
                     <div class="product-info">
@@ -182,7 +185,8 @@
         <div class="footer-content2">
             <div class="copyright">
                 <hr>
-                <p id="copyright-tag"> Copyright Mangata Gallo </p>
+                <p id="copyright-tag"> &copy; <span id="current-year"></span> Mangata Gallo. All rights reserved.  </p>
+                <p>Made with <i class="fa-solid fa-heart" style="color: red;"></i> by Ravi</p>
             </div>
         </div>
     </footer>
