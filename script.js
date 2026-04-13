@@ -36,15 +36,19 @@ yearSpan.textContent=currentYear;
 
 // Filter functionality
 const products = document.querySelectorAll(".product-section-card");
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const category_checkboxes = document.querySelectorAll('input[name="category"]');
+const material_checkboxes = document.querySelectorAll('input[name="material"]');
+const shopfor_checkboxes = document.querySelectorAll('input[name="shopfor"]');
 const radios = document.querySelectorAll('input[name="price"]');
 
 function filterProducts() {
     let selectedCategories = [];
+    let selectedMaterials = [];
+    let selectedShopFor = [];
     let selectedPrice = null;
 
     // categories
-    checkboxes.forEach(cb => {
+    category_checkboxes.forEach(cb => {
         if (cb.checked) {
             selectedCategories.push(cb.value);
         }
@@ -57,13 +61,36 @@ function filterProducts() {
         }
     });
 
+    material_checkboxes.forEach(cb => {
+        if (cb.checked) {
+            selectedMaterials.push(cb.value);
+        }
+    });
+
+    shopfor_checkboxes.forEach(cb => {
+        if (cb.checked) {
+            selectedShopFor.push(cb.value);
+        }
+    });
+
+
     products.forEach(product => {
         const category = product.dataset.category;
+        const material = product.dataset.material;
+        const shopfor = product.dataset.shopfor;
         const price = parseInt(product.dataset.price);
 
         let categoryMatch =
             selectedCategories.length === 0 ||
             selectedCategories.includes(category);
+
+        let materialMatch =
+            selectedMaterials.length === 0 ||
+            selectedMaterials.includes(material);
+
+        let shopForMatch =
+            selectedShopFor.length === 0 ||
+            selectedShopFor.includes(shopfor);
 
         let priceMatch = true;
 
@@ -72,7 +99,7 @@ function filterProducts() {
             priceMatch = price >= min && price <= max;
         }
 
-        if (categoryMatch && priceMatch) {
+        if (categoryMatch && materialMatch && shopForMatch && priceMatch) {
             product.style.display = "block";
         } else {
             product.style.display = "none";
@@ -80,7 +107,15 @@ function filterProducts() {
     });
 }
 
-checkboxes.forEach(cb => {
+category_checkboxes.forEach(cb => {
+    cb.addEventListener("change", filterProducts);
+});
+
+material_checkboxes.forEach(cb => {
+    cb.addEventListener("change", filterProducts);
+});
+
+shopfor_checkboxes.forEach(cb => {
     cb.addEventListener("change", filterProducts);
 });
 
