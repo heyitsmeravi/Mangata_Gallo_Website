@@ -1,38 +1,38 @@
-let positions=["left","center","right"];
-let currentIndex=0;
+let positions = ["left", "center", "right"];
+let currentIndex = 0;
 
-function changePosition(direction){
-    let item1=document.getElementById("item1");
-    let item2=document.getElementById("item2");
-    let item3=document.getElementById("item3");
-    if(direction === 'left'){
+function changePosition(direction) {
+    let item1 = document.getElementById("item1");
+    let item2 = document.getElementById("item2");
+    let item3 = document.getElementById("item3");
+    if (direction === 'left') {
         currentIndex = (currentIndex - 1 + 3) % 3;
-    } else if(direction === 'right'){
+    } else if (direction === 'right') {
         currentIndex = (currentIndex + 1) % 3;
     }
-    item1.className="items " + positions[currentIndex];
-    item2.className="items " + positions[(currentIndex + 1) % 3];
-    item3.className="items " + positions[(currentIndex + 2) % 3];
+    item1.className = "items " + positions[currentIndex];
+    item2.className = "items " + positions[(currentIndex + 1) % 3];
+    item3.className = "items " + positions[(currentIndex + 2) % 3];
 }
 
 // Navbar scroll effect
 
-let navbar=document.querySelector(".navbar");
-let lastScroll=0;
-window.addEventListener("scroll", function(){
-    let diff=window.scrollY - lastScroll;
-    if(diff > 10){
+let navbar = document.querySelector(".navbar");
+let lastScroll = 0;
+window.addEventListener("scroll", function () {
+    let diff = window.scrollY - lastScroll;
+    if (diff > 10) {
         navbar.classList.add("scrolled");
-    } else if(diff < -10){
+    } else if (diff < -10) {
         navbar.classList.remove("scrolled");
     }
-    lastScroll=window.scrollY;
+    lastScroll = window.scrollY;
 });
 
 // Set current year in footer
-let yearSpan=document.getElementById("current-year");
-let currentYear=new Date().getFullYear();
-yearSpan.textContent=currentYear;
+let yearSpan = document.getElementById("current-year");
+let currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
 
 // Filter functionality
 const products = document.querySelectorAll(".product-section-card");
@@ -79,7 +79,7 @@ function filterProducts() {
         const material = product.dataset.material;
         const shopfor = product.dataset.shopfor;
         const price = parseInt(product.dataset.price);
- 
+
         let categoryMatch =
             selectedCategories.length === 0 ||
             selectedCategories.includes(category);
